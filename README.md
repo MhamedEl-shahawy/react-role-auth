@@ -12,7 +12,7 @@ A lightweight, type-safe role-based access control provider for React applicatio
 ## Installation
 
 ```bash
-npm install @yourusername/react-role-auth
+npm install @mohamedshahawy98/react-role-auth
 ```
 
 ## Usage
@@ -20,12 +20,12 @@ npm install @yourusername/react-role-auth
 1. Wrap your app with AuthProvider:
 
 ```tsx
-import { AuthProvider } from '@yourusername/react-role-auth';
+import { AuthProvider } from "@mohamedshahawy98/react-role-auth";
 
 const user = {
-  id: '1',
-  email: 'user@example.com',
-  roles: ['admin', 'user']
+  id: "1",
+  email: "user@example.com",
+  roles: ["admin", "user"],
 };
 
 function App() {
@@ -40,14 +40,11 @@ function App() {
 2. Protect content with RequireAuth:
 
 ```tsx
-import { RequireAuth } from '@yourusername/react-role-auth';
+import { RequireAuth } from "@mohamedshahawy98/react-role-auth";
 
 function AdminPanel() {
   return (
-    <RequireAuth 
-      roles="admin" 
-      fallback={<p>Access denied</p>}
-    >
+    <RequireAuth roles="admin" fallback={<p>Access denied</p>}>
       <h1>Admin Panel</h1>
     </RequireAuth>
   );
@@ -70,8 +67,8 @@ The main provider component that manages role-based access control.
 
 ```tsx
 const {
-  user,     // Current user object or null
-  hasRole   // Function to check user roles
+  user, // Current user object or null
+  hasRole, // Function to check user roles
 } = useAuth();
 ```
 
@@ -89,7 +86,7 @@ const {
 ### Types
 
 ```tsx
-type Role = 'admin' | 'user' | 'guest';
+type Role = "admin" | "user" | "guest";
 
 interface User {
   id: string;
