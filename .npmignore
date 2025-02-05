@@ -1,0 +1,25 @@
+# Source
+src/
+tests/
+example/
+
+# Config files
+.eslintrc
+.prettierrc
+tsconfig.json
+vite.config.ts
+
+# Development
+node_modules/
+.vscode/
+.idea/
+*.log
+
+# Git
+.git/
+.gitignore
+
+# Build
+coverage/
+.nyc_output/
+*.tsbuildinfo

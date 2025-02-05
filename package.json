@@ -1,0 +1,44 @@
+{
+  "name": "@yourusername/react-role-auth",
+  "version": "1.0.0",
+  "description": "React authentication provider with role-based access control",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "eslint .",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "dependencies": {
+    "lucide-react": "^0.344.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.5.3",
+    "eslint": "^9.9.1"
+  },
+  "keywords": [
+    "react",
+    "authentication",
+    "authorization",
+    "rbac",
+    "role-based-access-control"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/react-role-auth"
+  }
+}
