@@ -12,7 +12,7 @@ A lightweight, type-safe role-based access control provider for React applicatio
 ## Installation
 
 ```bash
-npm install @msh/react-role-auth
+npm i react-role-auth-msh
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ npm install @msh/react-role-auth
 1. Wrap your app with AuthProvider:
 
 ```tsx
-import { AuthProvider } from "@msh/react-role-auth";
+import { AuthProvider } from "react-role-auth-msh";
 
 const user = {
   id: "1",
@@ -40,7 +40,7 @@ function App() {
 2. Protect content with RequireAuth:
 
 ```tsx
-import { RequireAuth } from "@msh/react-role-auth";
+import { RequireAuth } from "react-role-auth-msh";
 
 function AdminPanel() {
   return (
