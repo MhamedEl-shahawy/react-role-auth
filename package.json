@@ -1,5 +1,5 @@
 {
-  "name": "@mohamedshahawy98/react-role-auth",
+  "name": "@msh/react-role-auth",
   "version": "1.0.0",
   "description": "React authentication provider with role-based access control",
   "type": "module",
@@ -32,7 +32,7 @@
     "rbac",
     "role-based-access-control"
   ],
-  "author": "Your Name",
+  "author": "Mohamed Elshahawy",
   "license": "MIT",
   "repository": {
     "type": "git",
